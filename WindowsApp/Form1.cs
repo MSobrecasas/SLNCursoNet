@@ -24,18 +24,18 @@ namespace WindowsApp
 
             producto.Nombre = "Coca Cola";
             producto.Descripcion = "Gaseosa";
-            producto.Margen = 0.30;
+            producto.Margen = 30;
             producto.PrecioCosto = 460.5m;
-            producto.IVA = 0.21;
+            producto.IVA = 21;
             producto.Proveedor = "Coca Company";
             producto.Categoria = "Bebidas";
             producto.SubCategoria = "Sin Alcohol";
 
             string message = "Producto: " + producto.Nombre + " Descripcion: " + producto.Descripcion;
-            message += " Costo: " + producto.PrecioCosto + " Margen: " + producto.Margen * 100;
+            message += " Costo: " + producto.PrecioCosto + " Margen: " + producto.Margen;
             message += "% Precio Bruto: " + producto.PrecioBruto;
-            message += " IVA: " + producto.IVA * 100 + "% Precio Venta: " + producto.PrecioVenta;
-            message += " Categoria: " + producto.Categoria + " SubCategoria: " + producto.Categoria;
+            message += " IVA: " + producto.IVA+ "% Precio Venta: " + producto.PrecioVenta;
+            message += " Categoria: " + producto.Categoria + " SubCategoria: " + producto.SubCategoria;
             MessageBox.Show(message);
 
         }

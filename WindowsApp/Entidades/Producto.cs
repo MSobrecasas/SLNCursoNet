@@ -16,11 +16,11 @@ namespace WindowsApp.Entidades
         public double IVA { get; set; }
         public decimal PrecioBruto
         {
-            get { return this.PrecioCosto + Convert.ToDecimal(this.Margen) * PrecioCosto; }
+            get { return this.PrecioCosto * Convert.ToDecimal(this.Margen / 100 + 1); }
         }
         public decimal PrecioVenta
         {
-            get { return this.PrecioBruto + Convert.ToDecimal(this.IVA) * PrecioBruto; }
+            get { return this.PrecioBruto * Convert.ToDecimal(this.IVA / 100 + 1); }
         }
         public string Proveedor { get; set; }
         public string Categoria { get; set; }
