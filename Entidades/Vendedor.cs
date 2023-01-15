@@ -4,10 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsApp.Entidades
+namespace Entidades
 {
     public class Vendedor
     {
+        public Vendedor(string nombre, string apellido, string dNI, string email, string telefono, string direccion)
+        {
+            Nombre = nombre;
+            Apellido = apellido;
+            DNI = dNI;
+            Email = email;
+            Telefono = telefono;
+            Direccion = direccion;
+        }
+
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public string DNI { get; set; }

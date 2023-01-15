@@ -4,10 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsApp.Entidades
+namespace Entidades
 {
     public  class Remito
     {
+        public Remito(string numero, DateTime fecha, string cliente, string direccion, string condicionIVA, string condicionVenta, string detalle, DateTime fechaEntrega, decimal total)
+        {
+            Numero = numero;
+            Fecha = fecha;
+            Cliente = cliente;
+            Direccion = direccion;
+            CondicionIVA = condicionIVA;
+            CondicionVenta = condicionVenta;
+            Detalle = detalle;
+            FechaEntrega = fechaEntrega;
+            Total = total;
+        }
+
         public string Numero { get; set; }
         public DateTime Fecha { get; set; }
         public string Cliente { get; set; }
