@@ -96,7 +96,7 @@ namespace WindowsApp
 
         private static void CrearFactura()
         {
-            Factura factura = new Factura("C-2003", new DateTime(2023, 1, 12), "Jonh Doe", "Av Siempre Viva", "Responsable Inscripto", "Contado", "Gaseosas", 102203.2m, "pesos");
+            Factura factura = new Factura("C-2003", new DateTime(2023, 1, 12), "Jonh Doe", "Av Siempre Viva", "Responsable Inscripto", "Contado", "Gaseosas", 102203.2m, "A");
             string message = "Factura N°: " + factura.Numero + " Fecha" + factura.Fecha;
             message += " \nCliente: " + factura.Cliente + " Direccion: " + factura.Direccion;
             message += "\nCondicion IVA: " + factura.CondicionIVA + " Condicion Venta: " + factura.CondicionVenta;
