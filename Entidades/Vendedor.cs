@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entidades.Base;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,23 +7,13 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Vendedor
+    public class Vendedor : Persona
     {
-        public Vendedor(string nombre, string apellido, string dNI, string email, string telefono, string direccion)
+        public Vendedor(string nombre, string apellido, string email, string telefono, string direccion, string dni) : base(nombre, apellido, email, telefono, direccion)
         {
-            Nombre = nombre;
-            Apellido = apellido;
-            DNI = dNI;
-            Email = email;
-            Telefono = telefono;
-            Direccion = direccion;
+            DNI = dni;
         }
 
-        public string Nombre { get; set; }
-        public string Apellido { get; set; }
         public string DNI { get; set; }
-        public string Email { get; set; }
-        public string Telefono { get; set; }
-        public string Direccion { get; set; }
     }
 }

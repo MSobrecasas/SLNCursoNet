@@ -4,23 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entidades
+namespace Entidades.Base
 {
-    public class ClienteEmpresa
+    public abstract class Persona
     {
-        public ClienteEmpresa(string nombre, string cUIT, string contacto, string email, string telefono, string direccion)
+        protected Persona(string nombre, string apellido, string email, string telefono, string direccion)
         {
             Nombre = nombre;
-            CUIT = cUIT;
-            Contacto = contacto;
+            Apellido = apellido;
             Email = email;
             Telefono = telefono;
             Direccion = direccion;
         }
 
         public string Nombre { get; set; }
-        public string CUIT { get; set; }
-        public string Contacto { get; set; }
+        public string Apellido { get; set; }
         public string Email { get; set; }
         public string Telefono { get; set; }
         public string Direccion { get; set; }
