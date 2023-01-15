@@ -95,6 +95,7 @@
             this.btnCrearFactura.TabIndex = 5;
             this.btnCrearFactura.Text = "Crear Factura";
             this.btnCrearFactura.UseVisualStyleBackColor = true;
+            this.btnCrearFactura.Click += new System.EventHandler(this.btnCrearFactura_Click);
             // 
             // btnCrearRemito
             // 
@@ -104,6 +105,7 @@
             this.btnCrearRemito.TabIndex = 6;
             this.btnCrearRemito.Text = "Crear Remito";
             this.btnCrearRemito.UseVisualStyleBackColor = true;
+            this.btnCrearRemito.Click += new System.EventHandler(this.btnCrearRemito_Click);
             // 
             // Form1
             // 

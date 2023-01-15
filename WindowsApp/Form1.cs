@@ -70,5 +70,25 @@ namespace WindowsApp
             MessageBox.Show(message);
 
         }
+
+        private void btnCrearFactura_Click(object sender, EventArgs e)
+        {
+            Factura factura = new Factura("A", "C-2003", new DateTime(2023, 1, 12), "Jonh Doe", "Av Siempre Viva", "Responsable Inscripto", "Contado", "Gaseosas", 102203.2m);
+            string message = "Factura N°: " + factura.Numero + " Fecha" + factura.Fecha;
+            message += " \nCliente: " + factura.Cliente + " Direccion: " + factura.Direccion;
+            message += "\nCondicion IVA: " + factura.CondicionIVA + " Condicion Venta: " + factura.CondicionVenta;
+            message += "\nDetalle: " + factura.Detalle + " Total: " + factura.Total + " Tipo: " + factura.Tipo;
+            MessageBox.Show(message);
+        }
+
+        private void btnCrearRemito_Click(object sender, EventArgs e)
+        {
+            Remito remito = new Remito("C-2003", new DateTime(2023, 1, 12), "Jonh Doe", "Av Siempre Viva", "Responsable Inscripto", "Contado", "Gaseosas", new DateTime(2023, 1, 13), 102203.2m);
+            string message = "Remito N°: " + remito.Numero + " Fecha" + remito.Fecha;
+            message += " \nCliente: " + remito.Cliente + " Direccion: " + remito.Direccion;
+            message += "\nCondicion IVA: " + remito.CondicionIVA + " Condicion Venta: " + remito.CondicionVenta;
+            message += "\nDetalle: " + remito.Detalle + " Total: " + remito.Total + " Fecha Entrega: " + remito.FechaEntrega;
+            MessageBox.Show(message);
+        }
     }
 }
