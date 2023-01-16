@@ -8,6 +8,7 @@ namespace Entidades
 {
     public class Producto
     {
+        public Producto() { }
         public Producto(string nombre, string descripcion, decimal precioCosto, double margen, double iVA, string proveedor, string categoria, string subCategoria)
         {
             Nombre = nombre;

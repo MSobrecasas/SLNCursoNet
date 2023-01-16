@@ -8,6 +8,7 @@ namespace Entidades
 {
     public class Empresa
     {
+        public Empresa() { }
         public Empresa(string nombre, string cUIT, string contacto, string email, string telefono, string direccion)
         {
             Nombre = nombre;

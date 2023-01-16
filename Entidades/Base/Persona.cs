@@ -8,6 +8,7 @@ namespace Entidades.Base
 {
     public abstract class Persona
     {
+        public Persona() { }
         protected Persona(string nombre, string apellido, string email, string telefono, string direccion)
         {
             Nombre = nombre;

@@ -9,6 +9,7 @@ namespace Entidades
 {
     public class Vendedor : Persona
     {
+        public Vendedor() { }
         public Vendedor(string nombre, string apellido, string email, string telefono, string direccion, string dni) : base(nombre, apellido, email, telefono, direccion)
         {
             DNI = dni;
